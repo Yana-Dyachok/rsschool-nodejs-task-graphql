@@ -30,14 +30,50 @@ Make sure the important files have not been changed: npm run test-integrity.
 If the test was partially completed, then it is considered not completed.  
 If the one test was not completed, then the subsequent ones are considered not completed.  
 
-Steps to get started:  
+## How to install
 
-1. Install dependencies: npm ci  
-2. Create .env file (based on .env.example): ./.env  
-3. Create db file: ./prisma/database.db  
-4. Apply pending migrations: npx prisma migrate deploy  
-5. Seed db: npx prisma db seed  
-6. Start server: npm run start  
+1.  Clone this repository
+```
+git clone https://github.com/Yana-Dyachok/rsschool-nodejs-task-graphql
+```
+2.  Move to the cloned repository
+```
+cd rsschool-nodejs-task-graphql
+```
+3.  Switch the branch to `develop`
+```
+git checkout develop
+```
+4. Steps to get started:
+
+- Install dependencies:  
+   ```
+   npm ci
+   ``` 
+- Create .env file (based on .env.example): ./.env  
+- Create db file: ./prisma/database.db  
+- Apply pending migrations: 
+ ```
+npx prisma migrate deploy  
+```
+- Seed db: 
+ ```
+npx prisma db seed 
+``` 
+- Start server: 
+ ```
+npm run start  
+```
+
+## Run commands
+
+| Command                     | instructions                            |
+| --------------------------- | --------------------------------------- |
+| `npm run test-queries`      | Check GraphQL queries                   |
+| `npm run test-mutations`    | Check GraphQL mutations                 |
+| `npm run test-rule`         | Check if the query depth limit is enforced |
+| `npm run test-loader`       | Ensure that queries are optimized         |
+| `npm run test-loader-prime` | Check if the DataLoader cache is being utilized |
 
 Useful things:  
 

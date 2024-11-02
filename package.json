@@ -12,7 +12,7 @@
   },
   "type": "module",
   "prisma": {
-    "seed": "tsx prisma/seed.ts"
+    "seed": "node --loader ts-node/esm prisma/seed.ts"
   },
   "scripts": {
     "test-integrity": "node integrity.cjs",
@@ -62,8 +62,7 @@
     "prettier": "^3.0.0",
     "prisma": "^5.0.0",
     "tap": "^16.1.0",
-    "ts-node": "^10.9.2",
-    "tsx": "^4.19.2",
+    "ts-node": "^10.4.0",
     "typescript": "^5.0.0"
   },
   "peerDependencies": {
