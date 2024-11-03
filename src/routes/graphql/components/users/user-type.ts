@@ -1,5 +1,4 @@
 import { GraphQLObjectType, GraphQLNonNull, GraphQLString, GraphQLFloat, GraphQLList } from "graphql";
-import { PrismaClient } from "@prisma/client";
 import { UUIDType } from "../../types/uuid.js";
 import { PostType } from "../post/post-type.js";
 import { ProfileType } from "../profile/profile-type.js";
