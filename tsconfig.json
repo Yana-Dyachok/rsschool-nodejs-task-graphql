@@ -1,8 +1,9 @@
 {
   "extends": "fastify-tsconfig",
   "compilerOptions": {
-    "noImplicitAny": false,
+   "noImplicitAny": false,
     "noUnusedLocals": false,
+    "target": "ES2022",
     "outDir": "dist",
     "sourceMap": true,
     "moduleResolution": "nodenext",
